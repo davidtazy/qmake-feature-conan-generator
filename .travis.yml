@@ -4,7 +4,7 @@ python:
 # command to install dependencies
 install:
   - pip install conan
-  - apt-get install qt5-default
+  - apt-get install qtbase5-dev
   
 # command to run tests
 script:
