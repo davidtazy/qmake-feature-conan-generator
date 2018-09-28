@@ -1,6 +1,5 @@
 [requires]
 gtest/1.8.1@bincrafters/stable
-expat/2.2.5@bincrafters/stable
 
 
 [build_requires]
