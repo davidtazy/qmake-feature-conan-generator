@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/davidtazy/qmake-feature-conan-generator.svg?branch=master)](https://travis-ci.org/davidtazy/qmake-feature-conan-generator)
+
 #  Reduce number of lines in your .pro files and enhance lisibility
 
 ## how generator works
