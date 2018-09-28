@@ -2,9 +2,10 @@ language: python
 python:
   - "3.6"
 # command to install dependencies
+before_install:
+  - sudo apt-get install -y qtbase5-dev
 install:
   - pip install conan
-  - apt-get install qtbase5-dev
   
 # command to run tests
 script:
