@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3.6"
+# command to install dependencies
+install:
+  - pip install conan
+  
+# command to run tests
+script:
+  - conan create . david/testing   #or change test_generator/conanfile.txt accordingly
+  - mkdir build & cd build
+  - conan install ../test_generator 
+  - qmake -recursive ../test_generator/my_big_app.pro
+  - make
+  - ./tests/tests
