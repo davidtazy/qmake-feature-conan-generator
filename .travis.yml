@@ -10,7 +10,7 @@ install:
 # command to run tests
 script:
   - conan create . david/testing   #or change test_generator/conanfile.txt accordingly
-  - mkdir build & cd build
+  - mkdir build && cd build
   - conan install ../test_generator 
   - qmake -recursive ../test_generator/my_big_app.pro
   - make
