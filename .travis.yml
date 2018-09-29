@@ -17,6 +17,8 @@ script:
   - conan create . david/testing   #or change test_generator/conanfile.txt accordingly
   - mkdir build && cd build
   - conan install ../test_generator 
-  - qmake -makefile -d ../test_generator/my_big_app.pro
+  - which qmake
+  - where qmake
+  - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake -makefile -d ../test_generator/my_big_app.pro
   - make
   - ./tests/tests
