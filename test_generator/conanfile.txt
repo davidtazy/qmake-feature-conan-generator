@@ -8,4 +8,4 @@ QMakeFeatureGen/0.1@david/testing
 qmake_features
 
 [options]
-gtest:build_gmock=False
+gtest:fPIC=True
